@@ -70,6 +70,11 @@ function Menu() {
 }
 
 function Footer() {
+	const hour = new Date().getHours();
+	const openHour = 12;
+	const closingHour = 22;
+	const isOpen = hour >= openHour && hour <= closingHour;
+
 	return (
 		<footer>{new Date().toLocaleTimeString()} - We're currently open!</footer>
 	);
