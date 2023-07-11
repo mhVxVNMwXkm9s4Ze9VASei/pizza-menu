@@ -88,8 +88,8 @@ function Menu() {
 	);
 }
 
-function Pizza(props) {
-	const { ingredients, name, photoName, price, soldOut } = props.pizza;
+function Pizza({ pizza }) {
+	const { ingredients, name, photoName, price, soldOut } = pizza;
 	if (soldOut) return null;
 
 	return (
